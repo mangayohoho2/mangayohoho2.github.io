@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    body , .index > input {
+        background-color: #333333;
+    }
+
+    .indexBox {
+        background-color: #000000;
+    }
+
+    .indexp > a , .index > input {
+        color: #ffffff;
+    }
+
+    .index > input {
+        border-color: #ffffff;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+input {
+    color: black;
+    font-size: 1.2em;
+}
+
+#result {
+    margin: 1em;
+}
+
+.item_title {
+    text-decoration: none;
+    color: #36f;
+    font-weight: bolder;
+}
+
+.item_excerpt {
+    background: white;
+    margin: 0.5em 2em 1em;
+    padding: 0.5em;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    font-size: smaller;
+}
+
+.hide {
+    display: none;
+}
+
+.indexp {
+    width: 100%;
+}
+
+.indexBox {
+    background-color: #f8f4e6;
+    border-radius: 10px;
+    padding: 1% 1% 1% 1%;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bar > a {
+    display: block;
+}
+
+.hideBtn {
+    border: solid 1px #F60F0F;
+    background-color: #F60F0F;
+    border-radius: 50px;
+    color: white;
+}
+
+.index > input:placeholder-shown ~ #index{
+
+}
+
+.index > input:not(:placeholder-shown) ~ #index {
+    display: none;
+}
+
+.item_excerpt {
+    display: none;
+}
+
+@media screen and (min-width: 821px){
+
+    .index {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:820px){
+
+    .index {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:425px){
+
+    .index {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    #resultCount {
+        font-size: 16px;
+    }
+}

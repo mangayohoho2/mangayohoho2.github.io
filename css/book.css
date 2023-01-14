@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333;
+    }
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll; -webkit-overflow-scrolling: touch;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nextBox {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.next {
+    width: 33%;
+}
+.back {
+    width: 33%;
+}
+.chapter {
+    width: 33%;
+}
+
+.nextBtni , .backBtni{
+    width: 100%;
+    appearance: none;
+    background-color: #F60F0F;
+    color: white;
+    border: solid 2px #F60F0F;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.nextBtni:hover {
+    color: #F60F0F;
+    background-color: white;
+}
+
+.backBtni:hover {
+    color: #F60F0F;
+    background-color: white;
+}
+
+.chapterBtn {
+    width: 100%;
+    border: none;
+}
+
+select {
+    border-radius: 50px;
+}
+
+
+.img {
+    width: 100%;
+}
+
+.ad {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookTitleBox {
+    text-align: center;
+}
+
+.bookTitle {
+    font-weight: 700;
+    color: #F60F0F;
+}
+
+@media screen and (min-width:821px) {
+    .next {
+        width: 23%;
+        margin-left: 10%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 125%;
+    }
+    
+    .back {
+        width: 23%;
+        margin-right: 10%;
+    }
+    
+    .chapter {
+        width: 33%;
+    }
+    
+    select {
+        border-radius: 50px;
+    }
+    
+    .btnAi {
+        width: 30%;
+        margin-left: 50%;
+    }
+    
+    .btnBi {
+        width: 30%;
+        margin-left: 20%;
+    }
+    
+    .bookimg , .bookTitleBox {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .ad {
+        width: 728px;
+    }
+
+    .bookTitle {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .next {
+        width: 23%;
+        margin-left: 10%;
+    }
+    
+    button {
+        width: 100%;
+        font-size: 125%;
+    }
+    
+    .back {
+        width: 23%;
+        margin-right: 10%;
+    }
+    
+    .chapter {
+        width: 33%;
+    }
+    
+    select {
+        border-radius: 50px;
+    }
+    
+    .btnAi {
+        width: 30%;
+        margin-left: 50%;
+    }
+    
+    .btnBi {
+        width: 30%;
+        margin-left: 20%;
+    }
+    
+    .bookimg , .bookTitleBox {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .ad {
+        width: 728px;
+    }
+
+    .bookTitle {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .nextBox {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    select {
+        border-radius: 50px;
+    }
+    
+    .btnAi {
+        width: 40%;
+        margin-left: 50%;
+    }
+    
+    .btnBi {
+        width: 40%;
+        margin-left: 10%;
+    }
+    
+    .bookimg , .bookTitleBox {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .ad {
+        width: 375px;
+    }
+
+    .bookTitle {
+        font-size: 16px;
+    }
+}

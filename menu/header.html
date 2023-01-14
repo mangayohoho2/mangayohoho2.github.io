@@ -1,0 +1,40 @@
+<header class="header">
+    <div class="titleBox">
+        <div class="menuBox" id="menuL">
+            <a class="menu" href="/menu/request"><i class="fa-solid fa-question"></i> Request</a>
+        </div>
+        <div class="menuBox">
+            <a class="menu" href="/menu/new"><i class="fa-solid fa-fire"></i> New</a>
+        </div>
+        <div class="icon">
+            <img class="iconImg" src="/favicon/logo_transparent.png" onclick="location.href = '/index';">
+        </div>
+        <div class="menuBox">
+            <a class="menu" href="/menu/all"><i class="fa-solid fa-book"></i> All</a>
+        </div>
+
+        <div class="menuBox" id="menuR">
+            <a class="menu" href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';document.querySelector('.num').style.display = 'none';"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+        </div>
+
+        <div class="hamberger"><a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'block';" class="hamber"><i class="fa-solid fa-bars"></i></a></div>
+    </div>
+</header>
+
+<div id="hambergerMenu">
+    <div>
+        <a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+    <div><a href="/menu/new"><i class="fa-solid fa-fire"></i> New</a></div>
+    <div><a href="/menu/all"><i class="fa-solid fa-book"></i> All</a></div>
+    <div><a href="/menu/request"><i class="fa-solid fa-question"></i> Request</a></div>
+    <div><a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+</div>
+<div id="searchBox" onclick="">
+  <a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+  <div>
+      <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required/>
+      <span id="inputWord"></span><span id="resultCount"></span>
+      <div id="result"></div>
+  </div>
+</div>

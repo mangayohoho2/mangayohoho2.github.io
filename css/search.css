@@ -1,0 +1,33 @@
+#searchBox {
+    width: 98%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#searchBox > input {
+    border: solid 1px black;
+    width: 20%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#searchBox > input:focus {
+    outline-color: #F60F0F;
+}
+
+#searchBox > input:placeholder-shown ~ #result{
+}
+
+#searchBox > input:not(:placeholder-shown) ~ #result {
+    width: 250px;
+    border: solid 1px #C8C4BE;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.item_excerpt {
+    display: none;
+}

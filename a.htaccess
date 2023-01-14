@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngin on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{THE_REQUEST} \.html\ HTTP
+RewriteRule ^([^\.]+)\html$ $1.html [NC,L]
+</IfModule>
+ErrorDocument 404 /404.html

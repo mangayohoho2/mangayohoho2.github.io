@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>マンガyohoho-一覧</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="nofollow,noindex,noarchive" />
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <script src="/js/data.js"></script>
+        <link rel="icon" href="/favicon/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    </head>
+    <body onclick="">
+
+      <header class="header">
+        <div class="titleBox">
+            <div class="menuBox" id="menuL">
+                <a class="menu" href="/menu/request"><i class="fa-solid fa-question"></i> Request</a>
+            </div>
+            <div class="menuBox">
+                <a class="menu" href="/menu/new"><i class="fa-solid fa-fire"></i> New</a>
+            </div>
+            <div class="icon">
+                <img class="iconImg" src="/favicon/logo_transparent.png" onclick="location.href = '../index';">
+            </div>
+            <div class="menuBox">
+                <a class="menu" href="/menu/all"><i class="fa-solid fa-book"></i> All</a>
+            </div>
+
+            <div class="menuBox" id="menuR">
+                <a class="menu" href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';document.querySelector('.num').style.display = 'none';"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+            </div>
+
+            <div class="hamberger"><a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'block';" class="hamber"><i class="fa-solid fa-bars"></i></a>
+            </div>
+         </div>
+      </header>
+
+      <div id="hambergerMenu">
+        <div>
+          <a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div><a href="/menu/new"><i class="fa-solid fa-fire"></i> New</a></div>
+        <div><a href="/menu/all"><i class="fa-solid fa-book"></i> All</a></div>
+        <div><a href="/menu/request"><i class="fa-solid fa-question"></i> Request</a></div>
+        <div><a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+      </div>
+
+        <div class="index">
+            <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required />
+            <span id="inputWord"></span><span id="resultCount"></span>
+            <div id="result"></div>
+            <div class="indexBox" id="index">
+
+              <div class="bar">
+                  <a onclick="document.getElementById('bar1').style.display = 'block';">あ行</a>
+              </div>
+              <div id="bar1" class="hide">
+                  <div class="indexp"><a href="">アオアシ</a></div>
+                  <div class="indexp"><a href="">亜人</a></div>
+                  <div class="indexp"><a href="">推しの子</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar1').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar2').style.display = 'block';">か行</a></div>
+              <div id="bar2" class="hide">
+                  <div class="indexp"><a href="">怪獣8号</a></div>
+                  <div class="indexp"><a href="">可愛いだけじゃない式守さん</a></div>
+                  <div class="indexp"><a href="">鬼滅の刃</a></div>
+                  <div class="indexp"><a href="">ぐらんぶる</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar2').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar3').style.display = 'block';">さ行</a></div>
+              <div id="bar3" class="hide">
+                  <div class="indexp"><a href="">進撃の巨人</a></div>
+                  <div class="indexp"><a href="">SPY×FAMILY</a></div>
+                  <div class="indexp"><a href="">ザ・ファブル</a></div>
+                  <div class="indexp"><a href="">十字架のろくにん</a></div>
+                  <div class="indexp"><a href="/n00001/p00001/n00001">呪術廻戦</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar3').style.display = 'none';">リストを非表示</button>
+              </div>
+              <div class="bar"><a onclick="document.getElementById('bar4').style.display = 'block';">た行</a></div>
+              <div id="bar4" class="hide">
+                  <div class="indexp"><a href="/n00021/p00021/n00021">チェンソーマン</a></div>
+                  <div class="indexp"><a href="">東京卍リベンジャーズ</a></div>
+                  <div class="indexp"><a href="">ドクターストーン</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar4').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar5').style.display = 'block';">な行</a></div>
+              <div id="bar5" class="hide">
+                  <div class="indexp"><a>なし</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar5').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar6').style.display = 'block';">は行</a></div>
+              <div id="bar6" class="hide">
+                  <div class="indexp"><a href="">鋼の錬金術師</a></div>
+                  <div class="indexp"><a href="">はじめの一歩</a></div>
+                  <div class="indexp"><a href="">HUNTER×HUNTER</a></div>
+                  <div class="indexp"><a href="">ブラッククローバー</a></div>
+                  <div class="indexp"><a href="">ブルーロック</a></div>
+                  <div class="indexp"><a href="/n00003/p00003/n00003">僕のヒーローアカデミア</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar6').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar7').style.display = 'block';">ま行</a></div>
+              <div id="bar7" class="hide">
+                  <div class="indexp"><a href="">マッシュル</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar7').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar8').style.display = 'block';">や行</a></div>
+              <div id="bar8" class="hide">
+                  <div class="indexp"><a>なし</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar8').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar9').style.display = 'block';">ら行</a></div>
+              <div id="bar9" class="hide">
+                  <div class="indexp"><a>なし</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar9').style.display = 'none';">リストを非表示</button>
+              </div>
+    
+              <div class="bar"><a onclick="document.getElementById('bar10').style.display = 'block';">わ行</a></div>
+              <div id="bar10" class="hide">
+                  <div class="indexp"><a href="">ワールドトリガー</a></div>
+                  <div class="indexp"><a href="">ワンピース</a></div>
+                  <button class="hideBtn" onclick="document.getElementById('bar10').style.display = 'none';">リストを非表示</button>
+              </div>
+            </div>
+        </div>
+
+        
+      <div id="searchBox">
+        <a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+        <div>
+            <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required/>
+            <span id="inputWord"></span><span id="resultCount"></span>
+            <div id="result"></div>
+        </div>
+      </div>
+        
+        <script>
+            function search(query) {
+              var result = searchData(query);
+              var html = createHtml(result);
+              showResult(html);
+              showResultCount(result.length, data.length);
+            }
+            
+            function searchData(query) {
+              var result = [];
+            
+              query = query.trim();
+              if (query.length < 1) {
+                return result;
+              }
+              var re = new RegExp(query, 'i');
+              for (var i = 0; i < data.length; ++i) {
+                var pos = data[i].body.search(re);
+                if (pos != -1) {
+                  result.push([i, pos, pos + query.length]);
+                }
+              }
+              return result;
+            }
+            
+            function createHtml(result) {
+              var htmls = [];
+              for (var i = 0; i < result.length; ++i) {
+                var dataIndex = result[i][0];
+                var startPos = result[i][1];
+                var endPos = result[i][2];
+                var url = data[dataIndex].url;
+                var title = data[dataIndex].title;
+                var body = data[dataIndex].body;
+                htmls.push(createEntry(url, title, body, startPos, endPos));
+              }
+              return htmls.join('');
+            }
+            
+            function createEntry(url, title, body, startPos, endPos) {
+              return '<div class="item">' +
+                  '<a class="item_title" href="' + url + '">' + title + '</a>' +
+                  '<div class="item_excerpt">' + excerpt(body, startPos, endPos) + '</div>' +
+                  '</div>';
+            }
+            
+            function excerpt(body, startPos, endPos) {
+              return [
+                body.substring(startPos - 30, startPos),
+                '<b>', body.substring(startPos, endPos), '</b>',
+                body.substring(endPos, endPos + 200)
+              ].join('');
+            }
+            
+            function showResult(html) {
+              var el = document.getElementById('result');
+              el.innerHTML = html;
+            }
+            
+            function showResultCount(count, total) {
+              var el = document.getElementById('resultCount');
+              el.innerHTML = '<b>' + count + '</b> 件（' + total + '件中）';
+            }
+        </script>
+    </body>
+</html>

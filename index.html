@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>マンガyohoho-ホーム</title>
+        <meta name="description" content="フィルタリングやセキュリティなどの制限はもう考えなくていい。そうYohohoなら。無料で今この瞬間に見たいマンガを。">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="nofollow,noindex,noarchive" />
+        <link rel="stylesheet" href="/css/mangayohoho.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="icon" href="/favicon/favicon.ico">
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+        <script src="/js/search.js"></script>
+        <script src="/js/data.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body onclick="">
+
+        <header class="header">
+            <div class="titleBox">
+                <div class="menuBox" id="menuL">
+                    <a class="menu" href="/menu/request"><i class="fa-solid fa-question"></i> Request</a>
+                </div>
+                <div class="menuBox">
+                    <a class="menu" href="/menu/new"><i class="fa-solid fa-fire"></i> New</a>
+                </div>
+                <div class="icon">
+                    <img class="iconImg" src="/favicon/logo_transparent.png" onclick="location.href = 'index';">
+                </div>
+                <div class="menuBox">
+                    <a class="menu" href="menu/all"><i class="fa-solid fa-book"></i> All</a>
+                </div>
+
+                <div class="menuBox" id="menuR">
+                    <a class="menu" href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';document.querySelector('.num').style.display = 'none';"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                </div>
+
+                <div class="hamberger"><a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'block';" class="hamber"><i class="fa-solid fa-bars"></i></a></div>
+            </div>
+        </header>
+
+        <div id="hambergerMenu">
+            <div>
+                <a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div><a href="/menu/new"><i class="fa-solid fa-fire"></i> New</a></div>
+            <div><a href="/menu/all"><i class="fa-solid fa-book"></i> All</a></div>
+            <div><a href="/menu/request"><i class="fa-solid fa-question"></i> Request</a></div>
+            <div><a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+        </div>
+        
+        <div class="yohoBox">
+            <a class="yoho">MangaYohoho</a>
+        </div>
+
+        <div class="searchBox">
+            <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required/>
+            <span id="inputWord"></span><span id="resultCount"></span>
+            <div id="result"></div>
+        </div>
+
+        <div id="searchBox">
+            <a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+            <div>
+                <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required/>
+                <span id="inputWord"></span><span id="resultCount"></span>
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <div class="infoBox">
+            <div class="infoTitleU">
+                <a class="infoTitle">このサイトについて</a>
+            </div>
+            <div class="info">
+                <a class="infos">マンガは準備中です。準備中なんだけどちょっと色々あって更新に飽きて何もしたくない感じなんです。もうちょっと待ったら僕の中のよほほが再熱すると思うよ。<br>
+                </a><button class="infos" id="infos" onclick="document.getElementById('hide').style.display = 'block';">掲載予定はこちら</a>
+            </div>
+            <div id="hide">
+                <div class="hide"><a class="hideText">呪術廻戦</a></div>
+                <div class="hide"><a class="hideText">東京卍リベンジャーズ</a></div>
+                <div class="hide"><a class="hideText">僕のヒーローアカデミア</a></div>
+                <div class="hide"><a class="hideText">アオアシ</a></div>
+                <div class="hide"><a class="hideText">ワンピース</a></div>
+                <div class="hide"><a class="hideText">ブルーロック</a></div>
+                <div class="hide"><a class="hideText">十字架のろくにん</a></div>
+                <div class="hide"><a class="hideText">SPY×FAMILY</a></div>
+                <div class="hide"><a class="hideText">ブラッククローバー</a></div>
+                <div class="hide"><a class="hideText">推しの子</a></div>
+                <div class="hide"><a class="hideText">ワールドトリガー</a></div>
+                <div class="hide"><a class="hideText">マッシュル</a></div>
+                <div class="hide"><a class="hideText">HUNTER×HUNTER</a></div>
+                <div class="hide"><a class="hideText">ザ・ファブル</a></div>
+                <div class="hide"><a class="hideText">可愛いだけじゃない式守さん</a></div>
+                <div class="hide"><a class="hideText">鋼の錬金術師</a></div>
+                <div class="hide"><a class="hideText">ドクターストーン</a></div>
+                <div class="hide"><a class="hideText">鬼滅の刃</a></div>
+                <div class="hide"><a class="hideText">進撃の巨人</a></div>
+                <div class="hide"><a class="hideText">チェンソーマン</a></div>
+                <div class="hide"><a class="hideText">亜人</a></div>
+                <div class="hide"><a class="hideText">はじめの一歩</a></div>
+                <div class="hide"><a class="hideText">ぐらんぶる</a></div>
+                <div class="hide"><a class="hideText">怪獣8号</a></div>
+                <div class="hide"><a class="hideText">ワンパンマン</a></div>
+                <div class="hide"><a class="hideText">トモダチゲーム</a></div>
+                <button onclick="document.getElementById('hide').style.display = 'none';" id="hideBtn">リストを非表示</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div><a class="copylight" href="">© 2022 Yohoho.All Rights Reserved.</a></div>
+        </footer>
+    </body>
+</html>

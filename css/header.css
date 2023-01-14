@@ -1,0 +1,221 @@
+.title {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: #F60F0F;
+    border-radius: 50px;
+    width: 90%;
+    margin: 1% 5% 0 5%;
+    z-index: 50;
+}
+
+.footer {
+    background-color: #F60F0F;
+    padding: 1%;
+    text-align: center;
+}
+
+.copylight {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.titleBox {
+    display: flex;
+}
+
+.menuBox {
+    width: 15%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menuBox:hover .menu{
+    color: black;
+}
+
+.menuBox:hover {
+    background-color: #d30d0d;
+    border-radius: 10px;
+}
+
+#menuL {
+    margin-left: 17.5%;
+}
+
+#munuR {
+    margin-right: 17.5%;
+}
+
+.titleInBox {
+    width: 55%;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.iconImg {
+    width: 100%;
+}
+
+.icon > img:hover {
+    background-color: #d30d0d;
+    border-radius: 50px;
+}
+
+.icon {
+    width: 5%;
+    margin-top: 5px;
+}
+
+.menuBox > i {
+    color: white;
+}
+
+#searchBox {
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: none;
+}
+
+#searchBox > a {
+    z-index: 99;
+    margin-left: 10%;
+}
+
+#searchBox > a > i {
+    font-size: 50px;
+    color: #F60F0F;
+}
+
+#searchBox > div > input {
+    width: 100%;
+    font-size: 20px;
+}
+
+#hambergerMenu {
+    display: none;
+    z-index: 97;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #F60F0F;
+}
+
+#hambergerMenu > div > a{
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+#hambergerMenu > div {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+@media screen and (min-width: 821px){
+    .title {
+        font-size: 25px;
+        font-weight: 900;
+    }
+    
+    .menu {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .hamberger {
+        display: none;
+    }
+
+    #searchBox > div {
+        width: 35%;
+        margin-left: 32.5%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:820px){
+    .title {
+        font-size: 25px;
+        font-weight: 900;
+    }
+    
+    .menu {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .hamberger {
+        display: none;
+    }
+
+    .menuBox {
+        width: 20%;
+    }
+
+    #menuL {
+        margin-left: 7.5%;
+    }
+
+    #searchBox > div {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .title {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    
+    .menuBox {
+        display: none;
+    }
+
+    .header {
+        margin-top: 2%;
+    }
+
+    .icon {
+        width: 13%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+
+    .hamberger {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+
+    .hamber {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    #searchBox > div {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
